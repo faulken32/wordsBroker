@@ -1,0 +1,12 @@
+server:
+  port: 9000
+spring:
+  kafka:
+    consumer:
+      client-id: words
+      auto-offset-reset: earliest
+      group-id: wordsGroup
+    bootstrap-servers: 127.0.0.1:9092
+    producer:
+      client-id: words
+
