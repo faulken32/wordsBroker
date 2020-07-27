@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/Processor.iml
+/.idea/
