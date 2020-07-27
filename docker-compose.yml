@@ -1,6 +1,10 @@
 version: '3'
 
 services:
+  cassandra:
+    image: 'cassandra:3.11'
+    ports:
+      - '9042:9042'
   zookeeper:
     image: 'docker.io/bitnami/zookeeper:3-debian-10'
     ports:
