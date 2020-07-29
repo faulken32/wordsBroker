@@ -4,7 +4,7 @@ import com.infinity.wordsbroker.model.Sentence;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
-import java.util.List;
+
 
 @Service public class SentenceService {
 
@@ -15,13 +15,14 @@ import java.util.List;
         sentence = new Sentence();
     }
 
-    public List<String> addWord(String words) {
-        return this.sentence.addAWord(words);
+    /**
+     * add words to sentence
+     * @param words
+     */
+    public void addWord(String words) {
+         this.sentence.addAWord(words);
     }
 
-    public List<String> getWords(){
-        return this.sentence.getWords();
-    }
 
     public String getSentence(){
         return this.sentence.getSentence();
